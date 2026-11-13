@@ -23,8 +23,8 @@
       
       <a-assets>
         <!-- Preload the two glb models from the assets folder -->
-        <a-asset-item id="arrowModel" src="./assets/arrow.glb"></a-asset-item>
-        <a-asset-item id="vancouverModel" src="./assets/vancouver.glb"></a-asset-item>
+        <a-asset-item id="arrow1Model" src="./assets/arrow1.glb"></a-asset-item>
+        <a-asset-item id="arrow2Model" src="./assets/arrow2.glb"></a-asset-item>
       </a-assets>
 
       <!-- Camera component -->
@@ -32,24 +32,24 @@
 
       <!-- Target 0: Corresponds to the first uploaded image (carto.jpg) during compilation -->
       <a-entity mindar-image-target="targetIndex: 0">
-        <!-- Render the arrow.glb model; adjust scale according to the actual model size if needed -->
+        <!-- Render arrow1.glb model with adjusted scale 0.1 -->
         <a-gltf-model 
           rotation="0 0 0" 
           position="0 0 0" 
-          scale="0.05 0.05 0.05" 
-          src="#arrowModel" 
+          scale="0.1 0.1 0.1" 
+          src="#arrow1Model" 
           animation-mixer>
         </a-gltf-model>
       </a-entity>
 
       <!-- Target 1: Corresponds to the second uploaded image (tum.jpg) during compilation -->
       <a-entity mindar-image-target="targetIndex: 1">
-        <!-- Render the vancouver.glb model -->
+        <!-- Render arrow2.glb model with adjusted scale 0.1 -->
         <a-gltf-model 
           rotation="0 0 0" 
           position="0 0 0" 
-          scale="0.05 0.05 0.05" 
-          src="#vancouverModel" 
+          scale="0.1 0.1 0.1" 
+          src="#arrow2Model" 
           animation-mixer>
         </a-gltf-model>
       </a-entity>
